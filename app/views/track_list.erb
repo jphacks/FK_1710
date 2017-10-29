@@ -1,0 +1,28 @@
+<% @title = 'Track List' %>
+
+<table border="1">
+  <tr>
+    <th>Artist</th>
+    <th>Album</th>
+    <th>Track</th>
+  </tr>
+  <form action="playlist" method="POST">
+    <% @musics.each do |music| %>
+      <tr>
+        <td><%= music[:artist] %></td>
+        <td><%= music[:album] %></td>
+        <td>
+          <ul>
+            <% music[:track_titles].each do |track| %>
+              <div>
+                <input type="radio" name="playlist_radio" value="<%= music[:artist]%>,<%= track %>"><%= track %>
+              </div>
+
+          <% end %>
+          </ul>
+        </td>
+      </tr>
+    <% end %>
+    <input type="submit" value="OK">
+  </form>
+</table>

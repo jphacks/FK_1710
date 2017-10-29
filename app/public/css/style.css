@@ -1,0 +1,139 @@
+body {
+	background-color: white;
+	margin:0 ;
+}
+
+.container {
+  width: 100%;
+  padding: 0 px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+header{
+	background-image: url(/images/Background.png);
+  background-size: cover;
+  padding:10px;
+}
+
+header a{
+	float:left;
+}
+
+h1{
+	color:#5B86E5;
+}
+
+header h1{
+	margin-top: 0;
+	margin-bottom: 10px;
+	padding:50px 50px 0px 50px;
+	text-align: center;
+	font-size:50px;
+}
+
+.play_list_title{
+	font-size:40px;
+}
+
+header h2{
+	margin-top: 0;
+	text-align: center;
+	font-weight:normal;
+	font-size:20px;
+}
+
+/*top_CSS*/
+
+.find_wrapper{
+	text-align: center;
+}
+
+.find_artist{
+	font-size: 20px;
+	margin: 60px 0px 30px 0; 
+}
+
+.find_title{
+	font-size: 20px;
+	margin: 30px 0; 
+}
+
+input{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+input#find_button {
+  width: 300px;
+  height:50px;
+  margin-top:30px;
+  background-color:#5B86E5;
+  border-radius: 30px;
+  color:white;
+  font-size:15px;
+}
+
+/*result_CSS*/
+
+header img{
+	width:100px;
+	height:30px;
+}
+
+.main_wrapper{
+	text-align: center;
+}
+
+.playlist_wrapper{
+	margin: 50px 50px 50px 30px;
+}
+
+.song{
+	padding: 0px 10px 0px 10px;
+	border-bottom: thin solid gray;
+}
+
+.song img{
+	padding-top:10px;
+	width: 30px;
+	height: 30px;
+}
+
+.play{
+	padding-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  border: none;
+  background-color: white;
+	float:right;
+}
+
+.track_title{
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight : bold;
+}
+
+#sound audio{
+    width: 200px;
+    height: 32px;
+}
+
+footer{
+	background-color:#EFEFF0;
+	position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-top: 20px 
+}
+
+#itunes-preview{
+	text-align: center;
+	padding:0px 20px 20px 20px;
+	width:100%;
+}

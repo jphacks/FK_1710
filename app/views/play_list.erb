@@ -1,0 +1,29 @@
+<% @title = 'Play List' %>
+ <script type="text/javascript" src="/javascript/play_list.js"></script>
+
+<header>
+  <div class="container">
+    <a href="/"><img class="setting_button" src="/images/setting_button.svg" alt="選曲に戻る"></a>
+    <h1 class="play_list_title">プレイリスト</h1>
+  </div>
+</header>
+
+<div class="playlist_wrapper">
+  <div class="container">
+    <div class="song">
+      <% @musics.each do |music| %>
+        <div class="song">
+          <div>
+            <button class="play"><img src="/images/play_button.svg" alt="play"></button>
+          </div>
+          <div class="track_title"><%= music[:track_title] %></div>
+          <div class="artist"><%= music[:artist] %></div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div id="itunes-preview"></div>
+</footer>

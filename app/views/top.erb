@@ -1,0 +1,24 @@
+<% @title = 'Top' %>
+
+<header>
+	<div class="container">
+	  <h1>IKKYOKU</h1>
+	  <h2>お気に入りの1曲から<br>新しい音楽に出会おう</h2>
+	</div>
+</header>
+
+<div class="find_wrapper">
+  <div class="container">
+    <form action="playlist" method="POST">
+      <div class="find_artist">
+        アーティスト名<br><input type="text" name="artist">
+      </div>
+      <div class="find_title">
+        曲名<br><input type="text" name="track_title">
+      </div>
+
+      <input id="find_button" type="submit" value="似た曲からプレイリストを作成">
+
+    </form>
+  </div>
+</div>
